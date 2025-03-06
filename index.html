@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Examples</title>
+    <!--css links-->
+    <link rel="icon" href="images\favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center m-3 mb-4">What Can JavaScript Do?</h2>
+    </div>
+
+    <div class="container one">
+        <p id="click">JavaScript can change HTML content.</p>
+        <button type="button" onclick="showText()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>JavaScript can change HTML attribute values.</p>
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+        <button type="button" onclick="blue()" class="btn btn-dark ">Blue^^</button>
+        <img id="img" src="images/pink.png" class="star mb-5">
+        <button type="button" onclick="pink()" class="btn btn-dark">Pink^^</button>
+    </div><br>
+    <div class="container one">
+        <p id="font">JavaScript can change the style of an HTML content.</p>
+        <button type="button" onclick="fontS()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p id="dnone">JavaScript can hide HTML content.</p>
+        <button type="button" onclick="displayNone()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>JavaScript can show hidden HTML elements.</p>
+        <p id="down" style="display:none">Hello JavaScript!</p>
+        <button type="button" onclick="belowText()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>JavaScript can show the current date.</p>
+        <p id="date"></p>
+        <button type="button" onclick="showDate()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>JavaScript can show and hide HTML elements.</p>
+        <p id="text" style="display:none">Hello JavaScript!</p>
+        <button type="button" onclick="sText()" class="btn btn-dark">Show Text!</button>
+        <button type="button" onclick="hText()" class="btn btn-dark">Hide Text!</button>
+    </div><br>
+    <div class="container one">
+        <p>You can use an alert box to display data.</p>
+    </div><br> 
+    <div class="container one">
+        <p>You can print this page with the window.print() Method.</p>
+        <p>Click the button to print the current page.</p>
+        <button type="button" onclick="printPage()" class="btn btn-dark">Print this page</button>
+    </div><br>
+    <div class="container one">
+        <p>What is 5 + 2?</p>
+        <p id="sdata"></p>
+        <button type="button" onclick="showData()" class="btn btn-dark">Answer</button>
+    </div><br>
+    <div class="container one">
+        <p>What is 8 * 2?</p>
+        <p id="snum"></p>
+        <button type="button" onclick="showNum()" class="btn btn-dark">Answer</button>
+    </div><br>
+    <div class="container one">
+        <p>What is (5 + 6) * 10?</p>
+        <p id="sque"></p>
+        <button type="button" onclick="showAns()" class="btn btn-dark">Answer</button>
+    </div><br>
+    <div class="container one">
+        <p>If x = 5, then What is x * 2400?</p>
+        <p id="sques"></p>
+        <button type="button" onclick="showAnswer()" class="btn btn-dark">Answer</button>
+    </div><br>
+    <div class="container one">
+        <p>"C is less than A", Is it true or false?</p>
+        <p id="ans"></p>
+        <button type="button" onclick="showTorf()" class="btn btn-dark">Answer</button>
+    </div><br>
+    <div class="container one">
+        <p>"4 is less than 20", Is it true or false?</p>
+        <p id="sans"></p>
+        <button type="button" onclick="showTf()" class="btn btn-dark">Answer</button>
+    </div><br>
+    <div class="container one">
+        <p>But what if I put the numbers between double quotation mark, Now is it true or false?</p>
+        <p id="showans"></p>
+        <button type="button" onclick="showTfalse()" class="btn btn-dark">Answer</button>
+    </div><br>
+    <div class="container one">
+        <p>Strings are written inside quotes. You can use single or double quotes:</p>
+        <p id="string"></p>
+        <button type="button" onclick="watchString()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+        <p id="string2"></p>
+        <button type="button" onclick="watchStrings()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</p>
+        <p>The length of this string is:</p>
+        <p id="length"></p>
+        <button type="button" onclick="lengthS()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>The escape sequence \' inserts a single quote in a string.</p>
+        <p id="slash"></p>
+        <button type="button" onclick="slashS()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>The escape sequence \\ inserts a backslash in a string.</p>
+        <p id="slash2"></p>
+        <button type="button" onclick="slashShow()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>Extra large or extra small numbers can be written with scientific (exponent) notation:</p>
+        <p id="num"></p>
+        <button type="button" onclick="numbShow()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>Floating point arithmetic is not always 100% accurate.</p>
+        <p id="point"></p>
+        <button type="button" onclick="pointShow()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>POSITIVE_INFINITY is returned on overflow:</p>
+        <p id="inf"></p>
+        <button type="button" onclick="infShow()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>The NEGATIVE_INFINITY Property</p>
+        <p id="neg"></p>
+        <button type="button" onclick="negShow()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+        <p id="int"></p>
+        <button type="button" onclick="intShow()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>JavaScript Arrays</p>
+        <p id="array"></p>
+        <button type="button" onclick="showArray()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+        <p id="array2"></p>
+        <button type="button" onclick="showArrays()" class="btn btn-dark">Click Me!</button>
+    </div><br>
+    <div class="container one">
+        <p>New Date() without arguments, creates a date object with the current date and time:</p>
+        <p id="dt"></p>
+        <button type="button" onclick="showDt()" class="btn btn-dark">Show!</button>
+    </div><br>
+    <div class="container one">
+        <p>JavaScript Math Constants</p>
+        <p id="math"></p>
+        <button type="button" onclick="showM()" class="btn btn-dark">Show!</button>
+    </div><br>
+    <div class="container one">
+        <p>Display the value of Boolean(10 > 9):</p>
+        <p id="value"></p>
+        <button type="button" onclick="showV()" class="btn btn-dark">Show!</button>
+    </div><br>
+    <div class="container one">
+        <p>Input your age and click the button:</p>
+        <input id="age" value="18"/>
+        <button type="button" onclick="myFunction()" class="btn btn-dark">Submit</button>
+        <p id="func"></p>
+    </div><br>
+    <div class="container one">
+        <p>A time-based greeting:</p>
+        <p id="gg"></p>
+        <button type="button" onclick="showGreeting()" class="btn btn-dark">Greetings</button>
+    </div><br>
+    <div class="container one">
+        <p>JavaScript For Loop:</p>
+        <p id="loop"></p>
+        <button type="button" onclick="showLoop()" class="btn btn-dark">Show!</button>
+    </div><br>
+    <div class="container one">
+        <p>Iterate over a String:</p>
+        <p id="it"></p>
+        <button type="button" onclick="showIterab()" class="btn btn-dark">Show!</button>
+    </div><br>
+    <div class="container one">
+        <p>Create a set from an array:</p>
+        <p id="set"></p>
+        <button type="button" onclick="showSets()" class="btn btn-dark">Show!</button>
+    </div><br>
+
+
+    
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container one">
+        <p>JavaScript can delete HTML elements by clicking on a button.</p>
+        <button type="button" onclick="deleteItem()" class="btn btn-dark">Delete Everything</button>
+    </div>
+
+    <!--script links-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
