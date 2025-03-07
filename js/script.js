@@ -300,24 +300,14 @@ function showSets(){
 	document.getElementById('set').innerHTML= "The set has " + letters.size + " values.";
 }
 
+//error
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("er").innerHTML = err.message;
+}
 
 //delete text
 
